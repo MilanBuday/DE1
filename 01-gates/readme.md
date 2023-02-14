@@ -1,4 +1,4 @@
-# Lab 1: INSERT_YOUR_FIRSTNAME INSERT_YOUR_LASTNAME
+# Lab 1: MILAN BUDAY
 
 ### De Morgan's laws
 
@@ -12,8 +12,8 @@
 architecture dataflow of gates is
 begin
     f_orig_o <= (not(b_i) and a_i) or (c_i and not(b_i or not(a_i)));
-    f_nand_o <= not(not(not(b_i) and a_i) and not((c_i) and (not(b_i) and a_i))); -- MODIFY THIS FUNCTION
-    f_nor_o  <= not(b_i or not(a_i)) or not(not(c_i) or (b_i or not(a_i)));  -- MODIFY THIS FUNCTION
+    f_nand_o <= not(b_i) and a_i;
+    f_nor_o  <= (not(a_i) nor (b_i));
 end architecture dataflow;
 ```
 
@@ -21,21 +21,21 @@ end architecture dataflow;
 
    | **c** | **b** |**a** | **f_ORIG** | **f_(N)AND** | **f_(N)OR** |
    | :-: | :-: | :-: | :-: | :-: | :-: |
-   | 0 | 0 | 0 |  |  |  |
-   | 0 | 0 | 1 |  |  |  |
-   | 0 | 1 | 0 |  |  |  |
-   | 0 | 1 | 1 |  |  |  |
-   | 1 | 0 | 0 |  |  |  |
-   | 1 | 0 | 1 |  |  |  |
-   | 1 | 1 | 0 |  |  |  |
-   | 1 | 1 | 1 |  |  |  |
+   | 0 | 0 | 0 | 0 | 0 | 0 |
+   | 0 | 0 | 1 | 1 | 1 | 1 |
+   | 0 | 1 | 0 | 0 | 0 | 0 |
+   | 0 | 1 | 1 | 0 | 0 | 0 |
+   | 1 | 0 | 0 | 0 | 0 | 0 |
+   | 1 | 0 | 1 | 1 | 1 | 1 |
+   | 1 | 1 | 0 | 0 | 0 | 0 |
+   | 1 | 1 | 1 | 0 | 0 | 0 |
 
 ### Distributive laws
 
 1. Screenshot with simulated time waveforms. Always display all inputs and outputs (display the inputs at the top of the image, the outputs below them) at the appropriate time scale!
 
-   ![your figure]()
+   ![1st distributive law figure](images/distributive_law.png)
 
 2. Link to your public EDA Playground example:
 
-   [https://www.edaplayground.com/...](https://www.edaplayground.com/...)
+   [https://www.edaplayground.com/x/qYgB](https://www.edaplayground.com/x/qYgB)

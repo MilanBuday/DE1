@@ -31,11 +31,11 @@ Digital or Binary comparator compares the digital signals A, B presented at inpu
 
    Greater than:
 
-   ![K-maps](images/kmap_empty.png)
+   ![K-maps](images/kmap_greater.png)
 
    Less than:
 
-   ![K-maps](images/kmap_empty.png)
+   ![K-maps](images/kmap_less.png)
 
 2. Mark the largest possible implicants in the K-map and according to them, write the equations of simplified SoP (Sum of the Products) form of the "greater than" function and simplified PoS (Product of the Sums) form of the "less than" function.
 
@@ -45,7 +45,7 @@ Digital or Binary comparator compares the digital signals A, B presented at inpu
 
 1. Listing of VHDL stimulus process from testbench file (`testbench.vhd`) with at least one assert (use BCD codes of your student ID digits as input combinations). Always use syntax highlighting, meaningful comments, and follow VHDL guidelines:
 
-   Last two digits of my student ID: **xxxx??**
+   Last two digits of my student ID: **xxxx15**
 
 ```vhdl
     p_stimulus : process

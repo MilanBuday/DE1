@@ -1,6 +1,6 @@
 # Lab 2: MILAN BUDAY
 
-###Pre-Lab preperation
+### Pre-Lab preperation
 
 Digital or Binary comparator compares the digital signals A, B presented at input terminal and produce outputs depending upon the condition of those inputs.
 
@@ -54,22 +54,22 @@ Digital or Binary comparator compares the digital signals A, B presented at inpu
         report "Stimulus process started";
 
         -- First test case
-        s_b <= "BCD_OF_YOUR_SECOND_LAST_ID_DIGIT"; -- Such as "0101" if ID = xxxx56
-        s_a <= "BCD_OF_YOUR_LAST_ID_DIGIT";        -- Such as "0110" if ID = xxxx56
+        s_b <= "0001"; -- My second last digit of ID = xxxx15
+        s_a <= "0101"; -- My last digit of ID = xxxx15
         wait for 100 ns;
         -- Expected output
-        assert ((s_B_greater_A = 'WRITE_CORRECT_VALUE_HERE') and
-                (s_B_equals_A  = 'WRITE_CORRECT_VALUE_HERE') and
-                (s_B_less_A    = 'WRITE_CORRECT_VALUE_HERE'))
+        assert ((s_B_greater_A = '0') and
+                (s_B_equals_A  = '0') and
+                (s_B_less_A    = '1'))
         -- If false, then report an error
-        report "Input combination COMPLETE_THIS_TEXT FAILED" severity error;
+        report "Input combination b=0001 and a=0101 FAILED" severity error;
 
         -- Report a note at the end of stimulus process
         report "Stimulus process finished";
-        wait;
+        wait; -- Data generation process is suspended forever
     end process p_stimulus;
 ```
 
 2. Link to your public EDA Playground example:
 
-   [https://www.edaplayground.com/...](https://www.edaplayground.com/...)
+   [https://www.edaplayground.com/BsRR](https://www.edaplayground.com/x/BsRR)

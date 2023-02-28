@@ -21,7 +21,7 @@ end architecture Behavioral;
 
    ![your figure](pictures/figure.jpg)
    
-   Simulation in [EDA Playground] (https://www.edaplayground.com/x/kLqF)
+   Simulation in [EDA Playground](https://www.edaplayground.com/x/kLqF)
 
 3. Listing of pin assignments for the Nexys A7 board in `nexys-a7-50t.xdc`. **DO NOT list** the whole file, just your switch and LED settings.
 

@@ -55,7 +55,7 @@
 
 2. Listing of LEDs(7:4) of VHDL architecture `hex_led`. Try to write logic functions as simple as possible. Always use syntax highlighting, meaningful comments, and follow VHDL guidelines:
 
->*For this part of assigment I used [EDA Playground](https://www.edaplayground.com/x/kK5R) where I created new entity 'hex_led' and testbench the LED indicators.
+>For this part of assigment I used [EDA Playground](https://www.edaplayground.com/x/kK5R) where I created new entity 'hex_led' and testbench the LED indicators.
 
    ```vhdl
    --------------------------------------------------------------------
